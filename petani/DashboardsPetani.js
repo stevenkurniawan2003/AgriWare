@@ -4,7 +4,7 @@ import React from 'react'
 const Dashboards = () => {
   return (
     <View>
-      <Text>Dashboards</Text>
+      <Text>Dashboards Petani</Text>
     </View>
   )
 }

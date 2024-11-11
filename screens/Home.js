@@ -1,7 +1,9 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, StatusBar } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome6';
+import WelcomeScreen from './WelcomeScreen';
 
-const HomeScreen = ({ navigation }) => {
+const HomePetani = ({ navigation }) => {
   
   const handleLogin = () => {
     navigation.navigate('Login'); 
@@ -12,6 +14,10 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity style={{ marginRight:320, marginBottom:100 }} onPress={() => navigation.navigate(WelcomeScreen)} >
+        <Icon name="arrow-left-long" size={30} />
+      </TouchableOpacity>
+
       <StatusBar barStyle={'dark-content'} backgroundColor={'#ABBA7C'} />
       <View style={styles.iconContainer}>
         <Image
@@ -20,7 +26,7 @@ const HomeScreen = ({ navigation }) => {
         />
       </View>
       
-      <Text style={styles.title}>Selamat Datang Di AgriWare</Text>
+      <Text style={styles.title}>Selamat Datang Di Agriware</Text>
       
       <Text style={styles.subtitle}>
       Akses akun Anda untuk tetap terhubung dan mengelola semuanya dalam satu tempat!
@@ -81,6 +87,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 140,
     borderRadius: 5,
+    marginBottom:50
   },
   signupButtonText: {
     color: '#3C552D',
@@ -89,4 +96,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default HomePetani;

@@ -16,8 +16,7 @@ export default function WelcomeScreen({ navigation }) {
         <Text style={styles.text}>Agriware!!</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <BaseButton title="Petani" navigation={navigation} />
-        <BaseButton title="User" navigation={navigation} color="secondary" />
+        <BaseButton title="Masuk" navigation={navigation} targetScreen="Home" />
       </View>
     </ImageBackground>
   );
@@ -42,5 +41,6 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {
     padding: 20,
+    marginBottom:30
   },
 });

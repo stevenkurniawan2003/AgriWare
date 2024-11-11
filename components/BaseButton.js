@@ -3,11 +3,12 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 import colors from "../config/colors";
 
-const BaseButton = ({ title, color = "primary", navigation }) => {
+const BaseButton = ({ title, color = "primary", navigation, targetScreen }) => {
   const handle = () => {
-    navigation.navigate('HomeScreen');
+    if (targetScreen) {
+      navigation.navigate(targetScreen);
+    }
   };
-
 
   return (
     <TouchableOpacity
