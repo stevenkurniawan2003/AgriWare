@@ -1,5 +1,4 @@
 # AgriWare
-project functional programming
 AgriWare adalah sebuah aplikasi yang memungkinkan petani untuk mengatur dan 
 menjaga supaya gudang tetap terkoordinir dengan baik. Petani juga bisa memasarkan hasil panen 
 tanpa harus bergantung ke pengepul atau pemasok. Tetapi sebatas menampilkan barang-barang yang tersedia saja.
